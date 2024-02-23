@@ -12,7 +12,6 @@ export const transcribe = async (file: File): Promise<string> => {
   const res = await client.audio.transcriptions.create({
     model: "whisper-1",
     file,
-    response_format: "text",
   });
 
   return res.text;
