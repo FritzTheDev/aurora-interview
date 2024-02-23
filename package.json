@@ -4,16 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "envalid": "^8.0.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.11.20",
-    "envalid": "^8.0.0",
-    "express": "^4.18.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.3"
   }
 }
