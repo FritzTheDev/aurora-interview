@@ -1,8 +1,5 @@
 import { Router } from "express";
-import {
-  handleTranscriptClassification,
-  handleTranscriptionRequest,
-} from "./controllers/audio";
+import { handleTranscriptClassification, handleTranscriptionRequest } from "./controllers";
 
 export const router = Router();
 
